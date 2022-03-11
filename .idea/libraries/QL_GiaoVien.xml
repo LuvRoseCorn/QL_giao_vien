@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="QL_GiaoVien">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/QL_GiaoVien/QL_GiaoVien_jar/QL_GiaoVien.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

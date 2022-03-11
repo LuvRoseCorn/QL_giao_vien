@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="908.0" prefWidth="1226.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerQLGV.ControllerBtTkiemDl">
+    <children>
+        <TableView fx:id="tblGvBctk" layoutX="31.0" layoutY="393.0" prefHeight="425.0" prefWidth="573.0" stylesheets="@../CSS/QLGV.css">
+            <columns>
+                <TableColumn fx:id="colTentk1" prefWidth="112.0" text="Họ và tên" />
+                <TableColumn fx:id="colSdttk1" prefWidth="102.0" text="Số điện thoại" />
+                <TableColumn fx:id="colDonvitk1" prefWidth="116.0" text="Đơn vị chuyên môn" />
+                <TableColumn fx:id="colNamtk1" minWidth="0.0" prefWidth="91.0" text="Năm về trường" />
+                <TableColumn fx:id="colLuongtk1" maxWidth="596.0" minWidth="0.0" prefWidth="140.0" text="Hệ số lương ngạch bậc" />
+            </columns>
+        </TableView>
+        <TableView fx:id="tblGvMgtk" layoutX="625.0" layoutY="393.0" prefHeight="425.0" prefWidth="573.0" stylesheets="@../CSS/QLGV.css">
+            <columns>
+                <TableColumn fx:id="colTentk2" prefWidth="112.0" text="Họ và tên" />
+                <TableColumn fx:id="colSdttk2" prefWidth="102.0" text="Số điện thoại" />
+                <TableColumn fx:id="colDonvitk2" prefWidth="116.0" text="Đơn vị chuyên môn" />
+                <TableColumn fx:id="colNamtk2" minWidth="0.0" prefWidth="91.0" text="Năm về trường" />
+                <TableColumn fx:id="colLuongtk2" maxWidth="596.0" minWidth="0.0" prefWidth="140.0" text="Số giờ giảng thực" />
+            </columns>
+        </TableView>
+        <Pane layoutX="-1.0" layoutY="-3.0" prefHeight="78.0" prefWidth="1226.0" style="-fx-background-color: linear-gradient(to right top, #6c5ce7, #8554ed, #9f48f1, #b935f2, #d300f0);">
+            <children>
+                <Label layoutX="96.0" layoutY="19.0" prefHeight="40.0" prefWidth="283.0" text="Tìm kiếm giáo viên" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="28.0" />
+                    </font>
+                </Label>
+            <FontAwesomeIcon fill="WHITE" glyphName="SEARCH" layoutX="38.0" layoutY="56.0" size="50" />
+            </children></Pane>
+        <TextField fx:id="dvcmTk" layoutX="222.0" layoutY="293.0" prefHeight="35.0" prefWidth="200.0" promptText="Đơn vị chuyên môn" style="-fx-background-radius: 30px;">
+            <font>
+                <Font name="System Italic" size="13.0" />
+            </font></TextField>
+        <TextField fx:id="sdtTk" layoutX="222.0" layoutY="230.0" prefHeight="35.0" prefWidth="200.0" promptText="Số điện thoại" style="-fx-background-radius: 30px;">
+            <font>
+                <Font name="System Italic" size="13.0" />
+            </font></TextField>
+        <TextField fx:id="luongTk" layoutX="850.0" layoutY="164.0" prefHeight="35.0" prefWidth="200.0" promptText="Só lương" style="-fx-background-radius: 30px;">
+            <font>
+                <Font name="System Italic" size="13.0" />
+            </font></TextField>
+        <TextField fx:id="hvtTk" layoutX="222.0" layoutY="164.0" prefHeight="35.0" prefWidth="200.0" promptText="Họ và tên" style="-fx-background-radius: 30px;">
+            <font>
+                <Font name="System Italic" size="13.0" />
+            </font>
+        </TextField>
+        <Button fx:id="btBackTkiem" layoutX="987.0" layoutY="838.0" mnemonicParsing="false" onAction="#pressBackTkiem" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #b1245b; -fx-background-radius: 30px;" text="Trở về" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Button>
+        <Button fx:id="btTkiemTen" layoutX="447.0" layoutY="228.0" mnemonicParsing="false" onAction="#pressTkiemTen" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #0375c1; -fx-background-radius: 30px;" text="Tìm kiếm" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Button>
+        <Button fx:id="btTkiemLuong" layoutX="909.0" layoutY="228.0" mnemonicParsing="false" onAction="#pressTkiemLuong" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #0375c1; -fx-background-radius: 30px;" text="Tìm kiếm" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Button>
+      <Label layoutX="104.0" layoutY="112.0" text="Tìm kiếm giáo viên theo tên,SĐT, đơn vị chuyên môn">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="748.0" layoutY="112.0" text="Tìm kiếm giáo viện có lương lớn hơn 1 số cho trước">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="124.0" layoutY="169.0" text="Họ và tên :">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="96.0" layoutY="235.0" text="Só điện thoại :">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="297.0" text="Đơn vị chuyên môn :">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="760.0" layoutY="169.0" text="Số lương :">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+        <Label layoutX="80.0" layoutY="352.0" prefHeight="21.0" prefWidth="130.0" text="Giáo viên Biên chế">
+            <font>
+                <Font name="System Bold Italic" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="682.0" layoutY="354.0" text="Giáo viên Mời giảng">
+            <font>
+                <Font name="System Bold Italic" size="15.0" />
+            </font>
+        </Label>
+      <Pane layoutY="339.0" prefHeight="3.0" prefWidth="1226.0" style="-fx-background-color: linear-gradient(to right top, #6c5ce7, #8554ed, #9f48f1, #b935f2, #d300f0);" />
+    </children>
+</AnchorPane>

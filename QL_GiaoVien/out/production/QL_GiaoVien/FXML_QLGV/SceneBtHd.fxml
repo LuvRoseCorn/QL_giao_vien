@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="908.0" prefWidth="1226.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerQLGV.ControllerHd">
+    <children>
+        <Pane layoutX="-1.0" layoutY="-3.0" prefHeight="78.0" prefWidth="1226.0" style="-fx-background-color: linear-gradient(to right top, #6c5ce7, #8554ed, #9f48f1, #b935f2, #d300f0);">
+            <children>
+                <Label layoutX="96.0" layoutY="19.0" prefHeight="40.0" prefWidth="365.0" text="Hướng dẫn sử dụng" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="28.0" />
+                    </font>
+                </Label>
+            <ImageView fitHeight="62.0" fitWidth="58.0" layoutX="23.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/About.png" />
+               </image>
+            </ImageView>
+            </children></Pane>
+      <Pane layoutX="131.0" layoutY="114.0" prefHeight="707.0" prefWidth="939.0">
+         <children>
+            <FontAwesomeIcon fill="#6400ff" glyphName="HAND_ALT_RIGHT" layoutX="42.0" layoutY="49.0" size="30" text="" wrappingWidth="14.0" />
+            <Pane layoutX="85.0" layoutY="14.0" prefHeight="109.0" prefWidth="820.0" style="-fx-background-color: #dcdcdc; -fx-background-radius: 30px;">
+               <children>
+                  <Button alignment="CENTER_RIGHT" mnemonicParsing="false" prefHeight="58.0" prefWidth="132.0" style="-fx-background-color: #faa145; -fx-background-radius: 30px;" text="Tổng quát" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <FontAwesomeIcon disable="true" fill="WHITE" glyphName="DASHBOARD" layoutX="14.0" layoutY="39.0" size="30" text="" wrappingWidth="32.99999999999994" />
+                  <Label layoutX="146.0" layoutY="13.0" prefHeight="22.0" prefWidth="671.0" text="- Hiển thị tổng quát về dữ liệu giáo viên đang có như : tổng số lượng giáo viên, tổng số lượng">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="146.0" layoutY="32.0" prefHeight="22.0" prefWidth="660.0" text="giáo viên mỗi loại và lương trung bình của tất cả các giáo viên của trường học .">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="146.0" layoutY="63.0" prefHeight="22.0" prefWidth="671.0" text="- Biểu đồ thể hiện số lượng giáo viên làm việc theo từng đơn vị chuyên môn .">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIcon glyphName="LINE_CHART" layoutX="722.0" layoutY="84.0" size="30" wrappingWidth="32.999999999999886" />
+               </children>
+            </Pane>
+            <Pane layoutX="85.0" layoutY="180.0" prefHeight="109.0" prefWidth="820.0" style="-fx-background-color: #dcdcdc; -fx-background-radius: 30px;">
+               <children>
+                  <Label layoutX="146.0" layoutY="13.0" prefHeight="22.0" prefWidth="671.0" text="- Thêm thông tin giáo viên mới vào kho dữ liệu về giáo viên của trường học, xóa, sửa thông">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="146.0" layoutY="32.0" prefHeight="22.0" prefWidth="660.0" text="tin về những giáo viên đã có trong kho dữ liệu của nhà trường .">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="141.0" layoutY="55.0" prefHeight="22.0" prefWidth="671.0" text="- Bảng giáo viên Biên chế và bảng giáo viên Mời giảng hiển thị thông tin về những giáo viên ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button alignment="CENTER_RIGHT" mnemonicParsing="false" prefHeight="58.0" prefWidth="132.0" style="-fx-background-color: #f34b4b; -fx-background-radius: 30px;" text="Chỉnh sửa dữ liệu" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Button>
+                  <FontAwesomeIcon disable="true" fill="WHITE" glyphName="USER_PLUS" layoutX="8.0" layoutY="37.0" size="25" wrappingWidth="23.999999999999943" />
+                  <Label layoutX="141.0" layoutY="77.0" prefHeight="22.0" prefWidth="671.0" text="tương ứng với từng hình thức giáo viên .">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <FontAwesomeIcon fill="#6400ff" glyphName="HAND_ALT_RIGHT" layoutX="42.0" layoutY="223.0" size="30" text="" wrappingWidth="14.0" />
+            <Pane layoutX="85.0" layoutY="354.0" prefHeight="109.0" prefWidth="820.0" style="-fx-background-color: #dcdcdc; -fx-background-radius: 30px;">
+               <children>
+                  <Label layoutX="146.0" layoutY="13.0" prefHeight="22.0" prefWidth="671.0" text="- Tìm kiếm và hiển thị thông tin về những giáo viên theo những hình thức khác nhau :">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="146.0" layoutY="32.0" prefHeight="22.0" prefWidth="660.0" text="+ Theo tên, SĐT và đơn vị chuyên môn .">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="146.0" layoutY="76.0" prefHeight="22.0" prefWidth="671.0" text="- Bảng hiển thị thông tin về những giáo viên đã tìm kiếm được theo yêu cầu trên .">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button alignment="CENTER_RIGHT" mnemonicParsing="false" prefHeight="58.0" prefWidth="132.0" style="-fx-background-color: #1bbb88; -fx-background-radius: 30px;" text="Tìm kiếm giáo viên" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Button>
+                  <FontAwesomeIcon disable="true" fill="WHITE" glyphName="SEARCH" layoutX="8.0" layoutY="37.0" size="25" text="" wrappingWidth="23.999999999999886" />
+                  <Label layoutX="146.0" layoutY="54.0" prefHeight="22.0" prefWidth="660.0" text="+ Theo lương lớn hơn 1 số cho trước .">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="85.0" layoutY="532.0" prefHeight="109.0" prefWidth="820.0" style="-fx-background-color: #dcdcdc; -fx-background-radius: 30px;">
+               <children>
+                  <Label layoutX="146.0" layoutY="13.0" prefHeight="22.0" prefWidth="671.0" text="- Hiển thị toàn bộ thông tin chi tiết về tất cả những giáo viên đang có trong trường học theo">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="146.0" layoutY="32.0" prefHeight="22.0" prefWidth="660.0" text="mỗi hình thức giáo viên .">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button alignment="CENTER_RIGHT" mnemonicParsing="false" prefHeight="58.0" prefWidth="132.0" style="-fx-background-color: #1d9bff; -fx-background-radius: 30px;" text="Thống kê giáo viên" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Button>
+                  <FontAwesomeIcon disable="true" fill="WHITE" glyphName="BAR_CHART" layoutX="8.0" layoutY="35.0" size="20" text="" wrappingWidth="23.999999999999886" />
+                  <Label layoutX="146.0" layoutY="55.0" prefHeight="22.0" prefWidth="671.0" text="- Chọn giáo viên nào sẽ hiển thị lương của giáo viên đó .">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIcon glyphName="DOLLAR" layoutX="561.0" layoutY="68.0" size="30" wrappingWidth="32.999999999999886" />
+               </children>
+            </Pane>
+            <FontAwesomeIcon fill="#6400ff" glyphName="HAND_ALT_RIGHT" layoutX="42.0" layoutY="390.0" size="30" text="" wrappingWidth="14.0" />
+            <FontAwesomeIcon fill="#6400ff" glyphName="HAND_ALT_RIGHT" layoutX="42.0" layoutY="575.0" size="30" text="" wrappingWidth="14.0" />
+         </children></Pane>
+        <Button fx:id="btBackHd" layoutX="987.0" layoutY="838.0" mnemonicParsing="false" onAction="#pressBackHd" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #b1245b; -fx-background-radius: 30px;" text="Trở về" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="908.0" prefWidth="1226.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerQLGV.ControllerBtTkeDl">
+    <children>
+        <Pane layoutX="-1.0" layoutY="-3.0" prefHeight="78.0" prefWidth="1226.0" style="-fx-background-color: linear-gradient(to right top, #6c5ce7, #8554ed, #9f48f1, #b935f2, #d300f0);">
+            <children>
+                <Label layoutX="96.0" layoutY="19.0" prefHeight="40.0" prefWidth="365.0" text="Thống kê dữ liệu giáo viên" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="28.0" />
+                    </font>
+                </Label>
+            <FontAwesomeIcon fill="WHITE" glyphName="BAR_CHART" layoutX="26.0" layoutY="56.0" size="50" />
+            </children></Pane>
+        <TableView fx:id="tblGvBc" layoutX="31.0" layoutY="236.0" prefHeight="582.0" prefWidth="573.0" stylesheets="@../CSS/QLGV.css">
+            <columns>
+                <TableColumn fx:id="colTen1" prefWidth="112.0" text="Họ và tên" />
+                <TableColumn fx:id="colSdt1" prefWidth="102.0" text="Số điện thoại" />
+                <TableColumn fx:id="colDonvi1" prefWidth="116.0" text="Đơn vị chuyên môn" />
+                <TableColumn fx:id="colNam1" minWidth="0.0" prefWidth="91.0" text="Năm về trường" />
+                <TableColumn fx:id="colLuong1" maxWidth="596.0" minWidth="0.0" prefWidth="140.0" text="Hệ số lương ngạch bậc" />
+            </columns>
+        </TableView>
+        <TableView fx:id="tblGvMg" layoutX="625.0" layoutY="236.0" prefHeight="582.0" prefWidth="573.0" stylesheets="@../CSS/QLGV.css">
+            <columns>
+                <TableColumn fx:id="colTen2" prefWidth="112.0" text="Họ và tên" />
+                <TableColumn fx:id="colSdt2" prefWidth="102.0" text="Số điện thoại" />
+                <TableColumn fx:id="colDonvi2" prefWidth="116.0" text="Đơn vị chuyên môn" />
+                <TableColumn fx:id="colNam2" minWidth="0.0" prefWidth="91.0" text="Năm về trường" />
+                <TableColumn fx:id="colLuong2" maxWidth="596.0" minWidth="0.0" prefWidth="140.0" text="Số giờ giảng thực" />
+            </columns>
+        </TableView>
+        <Button fx:id="btBackTke" layoutX="987.0" layoutY="838.0" mnemonicParsing="false" onAction="#pressBackTke" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #b1245b; -fx-background-radius: 30px;" text="Trở về" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Button>
+        <Label layoutX="83.0" layoutY="199.0" prefHeight="21.0" prefWidth="130.0" text="Giáo viên Biên chế">
+            <font>
+                <Font name="System Bold Italic" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="672.0" layoutY="199.0" text="Giáo viên Mời giảng">
+            <font>
+                <Font name="System Bold Italic" size="15.0" />
+            </font>
+        </Label>
+        <Button fx:id="btChoose" layoutX="912.0" layoutY="124.0" mnemonicParsing="false" onAction="#pressChoose" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #02af99; -fx-background-radius: 30px;" text="Chọn" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Button>
+      <Label layoutX="318.0" layoutY="126.0" prefHeight="36.0" prefWidth="228.0" text="Lương giáo viên =">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="luongGv" layoutX="544.0" layoutY="129.0" promptText="lương">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </TextField>
+      <FontAwesomeIcon glyphName="MONEY" layoutX="257.0" layoutY="161.0" size="50" />
+    </children>
+</AnchorPane>
